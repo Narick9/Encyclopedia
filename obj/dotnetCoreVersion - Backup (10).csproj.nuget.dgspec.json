@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\dotnetCoreVersion - Backup (10).csproj": {}
+  },
+  "projects": {
+    "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\dotnetCoreVersion - Backup (10).csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\dotnetCoreVersion - Backup (10).csproj",
+        "projectName": "dotnetCoreVersion - Backup (10)",
+        "projectPath": "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\dotnetCoreVersion - Backup (10).csproj",
+        "packagesPath": "C:\\Users\\musli\\.nuget\\packages\\",
+        "outputPath": "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\musli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\CommonShareableTypes15.7\\CommonShareableTypes.csproj": {
+                "projectPath": "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\CommonShareableTypes15.7\\CommonShareableTypes.csproj"
+              },
+              "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\OtherProject\\OtherProject.csproj": {
+                "projectPath": "D:\\dev_2021-06jun-26\\c#-2021_06jun_26\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_06jun_26\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\OtherProject\\OtherProject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Windows.Extensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

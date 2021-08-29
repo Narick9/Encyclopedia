@@ -1,0 +1,38 @@
+﻿/*
+ * date    13 sep 20
+ * author  artur
+ */
+//using System.Windows.Forms;  // System.Windows.Forms - для доступа к этому пространству имён нужно добавить ссылку на System.Windows.Forms.dll
+//                             // По-настоящему важно понимать, что область Framework диалогового окна Add Reference отображает только те сборки,
+//                             //   на которые она изначально запрограммированна. Это значит, что это окно отображает далеко не все сборки, что
+//                             //   есть у тебя на компьютере. Также оно не будет отображать все библиотеки, расположенные в GAC (причина этого
+//                             //   описана далее). Если тебе нужна сборка, которой нет в списке, тебе придётся использовать кнопку Browse и
+//                             //   вручную перейти к нужному файлу .dll или .exe
+//                             // Область Recent же поддерживает свой список в актуальном состоянии, поэтому часто удобно пользоваться ей, если
+//                             //   ты постоянно подключаешь одни и те же сборки
+//
+//
+//namespace CarLibrary
+//{
+//    public class SportsCar : Car
+//    {
+//        public SportsCar() { }
+//        public SportsCar(string petName, int currentSpeed, int maxSpeed) : base(petName, currentSpeed, maxSpeed) { }
+//        // SportsCar() - напомню, что даже если ты и создал здесь отдельный конструктор для нового класса, всё равно будет вызван (явно или
+//        //   нет) один из конструкторов базового (по умолчанию это стандартный)
+//        public override void TurboBoost()
+//        {
+//            MessageBox.Show("Ramming Speed!", "Faster is better!");
+//        }
+//    }
+//    public class MiniVan : Car
+//    {
+//        public MiniVan() { }
+//        public MiniVan(string petName, int currentSpeed, int maxSpeed) : base(petName, currentSpeed, maxSpeed) { }
+//        public override void TurboBoost()
+//        {
+//            engineState = CarLibrary.EngineState.engineDead;         // CarLibrary - под EngineState компилятор в этом контексте понимает
+//            MessageBox.Show("Eek!", "Your engine block exploded!");  //   одноимённое свойство
+//        }
+//    }
+//}

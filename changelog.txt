@@ -1,0 +1,413 @@
+﻿/*
+ * creation date  02 jul 2021
+ * last change    28 aug 2021
+ * author         artur
+ */
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+26_jun_2021: ../dotnetCoreVersion-../
+у этой директория было имя
+../dotnetCoreVersion-its_broken_but_nothing_lost-2021_06jun_26/
+
+28_jun_2021: ../dotnetCoreVersion-../
+у этой директория было имя
+../dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28/
+
+02_jul_2021: D:\dev_2021-06jun-26\c#-2021_06jun_26\Troelsen_yasik-programmirovaniya-csharp-7\MySummary-2021_06jun_26\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\CommonShareableTypes15.7\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+//%%%%отсановка здесь. ты выбрать путь .NET (тот, что .NET Core). ты пересоздать
+//    CommonShareableTypes как .NET 5 проект. ты подравить файл
+//    вроде выше в энциклопедия, чтоб компилиться. ты также добавить несколько
+//    комментариев про то, что миграция с .NET Framework на .NET Core
+//    просто так не проходить, нужно пересоздавать. очень хочешь продолжить
+//    читать CodeFile..cs
+
+09_jul_2021: 34-.cs
+//%%%%остановка здесь. ты начать новый CodeFile..cs
+
+09_jul_2021: DynamicTypeANDMicrosoftCSharpRuntimeBinderNamespace
+//%%%%ты доделать большую часть этого метода. ты закончить CodeFile16.1.cs
+
+09_jul_2021: *****_ *****
+//%%%%остановка здесь. ты начать новый CodeFile..cs
+
+10_jul_2021: DynamicTypeANDMicrosoftCSharpRuntimeBinderNamespace
+//%1%%ты добавить в блок про Microsoft.CSharp.dll инфо о том, что там 4-е типа.
+//    ты также подправить текст там
+
+11_jul_2021: DynamicTypeANDMicrosoftCSharpRuntimeBinderNamespace
+//%1%%ты добавить в блок про Microsoft.CSharp.dll инфо о том, что там 4-е типа.
+//    ты также подправить текст там
+11_jul_2021: DLR_Silent
+//%%%%остано
+
+12_jul_2021: DLR_Silent
+//%1%%ты снова прочитать про деревья выражений
+12_jul_2021: DynamicProfit
+//%2%%ты создать метод DynamicProfit. ты скопировать в него то, как позднее
+//    свзяывание происходило раньше, и как сейчас.
+12_jul_2021: COMExtraANDPIA_Silent
+//%3%%ты скопировать в метод про COM текст про устройство сборка COM. здесь
+//    также написано про транслятор .NET <-> COM - RCW
+//    (Runtime Callable Wrapper). сейчас ты хотеть перенести проект
+//    16.3.1_ExportMetadataOfOffice в энциклопедия
+
+13_jul_2021: COMExtraANDPIA_Silent
+//%1%%ты создать часть метода про PIA. ты копировать сюда текст. ты прочитать
+//    его и подправить где надо. ты сделать after reading: где
+//    надо. ты также решить перенести весь текст after reading: из COM..() сюда
+13_jul_2021: COMExtraANDPIA_Silent
+//%2%%ты перенести сюда текст COMUsingDifficulties. ты прочесть его. где надо в
+//    тексте в остальной энкциклопедия расставить
+//    after reading. ты переименовать метод CSharp..() в
+//    CSharpANDNETReleases..().
+13_jul_2021: MicrosoftOfficeInteropExcelNamespace_Silent
+//%3%%остановка здесь. ты начать работать с блоком, где описываться
+//    использование COM сборки взаимодействия. ты создать метод
+//    MicrosoftOfficeInteropExcelNamespace_Silent(), ты хотеть перенести всю
+//    инфу о этом namespace туда. ты копировать часть текста
+//    с этим namespace туда. очень хотеть продолжить
+
+14_jul_2021: CSharpANDNETReleases_Silent
+//%1%%ты добавить инфо про $@ (это дословные строки) в метод о
+//    фишках CSharp
+14_jul_2021: MicrosoftOfficeInteropExcelNamespace_Silent
+//%2%%ты закончить делать метод о MicrosoftOfficeInteropExcelNamespace.
+14_jul_2021: COMExtraANDPIA_Silent
+//%2%%ты завершить этот метод, сделав часть про пример использования COM сборка.
+//    этим ты также завершить CodeFile16.3.cs. финал в методе
+//    быть очень крутой
+
+15_jul_2021: Processes_Silent
+//%1%%остановка здесь. ты копировать текст WhatIsIt сюда. ты начать его читать.
+//    ты сделать блок after reading:. ты решить сделать этот блок немного
+//	  по-другому
+
+29_jul_2021: changelog.txt
+ты прилететь из турция. ты сделать местный текст в 80 символов ограничение. ты
+также подумывать изучать и обсуждать всё вместе с интернет друг
+
+30_jul_2021: Processes_Silent
+//%1%%ты дочитать WhatItIs в этом методе. ты также добавить инфо как посмотреть
+//    PID (process identifier data) в gnu/linux
+30_jul_2021: Threads_Silent
+//%2%%ты копировать сюда блок WhatItIs. ты прочесть его, сделать несколько
+//    поправок.
+
+31_jul_2021: IntelliSenseANDCodeLens_Silent
+//@1@@ты написать о том, что вычитать на stackoverflow инфо, что IntelliSense от
+//    VS Code не запускается, пока в папке с проектом нету <project>.json или
+//    .sln
+31_jul_2021: IntelliSenseANDCodeLens_Silent
+//@2@@ты написать о том, как решить проблему, если IntelliSense не запускается,
+//    и логи OmniSharp говорить о ошибке загрузки проекта
+31_jul_2021: SystemDiagnosticsNamespace
+//@3@@ты сделать блок General info about System.Diagnostics
+31_jul_2021: SystemDiagnosticsNamespace
+//@4@@ ты сделать блок System.Diagnostics.Process
+31_jul_2021: CSharpANDNETReleases_Silent
+//@5@@ты добавить инфо о том, как в $"" добавить знаки {}
+31_jul_2021: SystemDiagnosticsNamespace
+//@6@@ты сделать блок Using. позже ты добавить сюда ещё много блоков с
+//    использованием. последний блок про ..Process.Start() и ..Kill() ты только
+//    начать читать, но ещё не доделать
+31_jul_2021: SystemDiagnosticsNamespace
+//@7@@ты завершить блок More about System.Diagnostics.ProcessThread, и этим ты
+//    закончить CodeFile17.1.cs
+
+
+01_aug_2021: SystemDiagnosticsProcess
+//@1@@ты решить выделить отдельный метод для System.Diagnostics.Process
+01_aug_2021: SystemDiagnosticsProcessThread
+//@2@@ты решить выделить отдельный метод для System.Diagnostics.ProcessThread
+01_aug_2021: SystemDiagnosticsProcessModule
+//@3@@ты решить выделить отдельный метод для System.Diagnostics.ProcessModule
+01_aug_2021: SystemDiagnosticsProcessStartInfo
+//@4@@ты решить выделить отдельный метод для System.Diagnostics.ProcessStartInfo
+01_aug_2021: SystemCollectionsSpecializedStringDictionary_Silent
+//@5@@ты создать метод о классе System.Collections.Specialized.StringDictionary
+//    (коллекция для string ключей-значений)
+01_aug_2021: SystemSecuritySecureString_Silent
+//@6@@ты создать метод о System.Security.SecureString (безопасная версия строка)
+01_aug_2021: SystemDiagnosticsProcessWindowStyle_Silent
+//@7@@ты создать отдельный метод о System.Diagnostics.ProcessWindowStyle
+01_aug_2021: SystemDiagnosticsProcessStartInfo
+//@8@@ты начать писать о System.Diagnostics.ProcessStartInfo.
+01_aug_2021: Domains_Silent
+//@9@@ты копировать блок выше и блок ниже сюда. очень хочешь продолжить
+
+
+02_aug_2021: DomainsANDSysetmAppDomainANDItsStuffSilent
+//@1@@остановка здесь. ты сделать весь этот метод. ты внести сюда очень много
+//	  информации. очень хочешь продолжить
+
+
+04_aug_2021: DomainsANDSysetmAppDomainANDItsStuff
+//@1@@ты завершить метод о доменах. в конце ты оставить зацепку к следующей теме
+//    - контекстные краницы
+04_aug_2021: ObjectContextsANDItsStuff_Silent
+//@2@@остановка здесь. ты почти сделать метод ObjectContextsANDItsStuff. очень
+//    хочешь продолжить
+04_aug_2021: ObjectContextsANDItsStuff_Silent
+//@3@@ты завершить метод о контекстах и сопуствующая начинка
+
+06_aug_2021: CILExtra_Silent
+//@1@@ты решить перенести метод CILExtra в конец энциклопедия (файл номер 42)
+06_aug_2021: CILExtra_Silent
+//@2@@остановка здесь. ты дополнить метод CILExtra. этот метод следует дополнить
+//    ещё
+
+07_aug_2021: OpcodesAndMnemonic_Silnet (from CodeFiles..cs)
+//@1@@остановка здесь.
+
+09_aug_2021: CILExtra_Silent
+//@1@@ты перечитать этот метод (на данный момент он кончаться на части о
+//    OperationCodes). попутно ты сделать правки, вырезать несостоятельный текст
+09_aug_2021: CILExtra_Silent
+//@2@@ты написать в readme.txt пункт о том, что тебе надо переделать
+//    энциклопедия. ты решить переделать этот метод
+
+10_aug_2021: CILExtra_Silent
+//@1@@ты завершить проект 18.1
+10_aug_2021: Ildasm_Silent
+//@2@@ты добавить инфо в метод ildasm о том, что CIL код можно сохранять в файл.
+//    ты начать реверс-инженеринг. очень хочешь продолжить
+
+12_aug_2021: VisualStudio_Silent
+//@1@@ты добавить блок о csc.exe
+12_aug_2021: CILExtraANDReverseEngineering_Silent
+//@2@@остановка здесь (после начала реверс-инжиниринга)
+
+13_aug_2021: VSCode_Silent
+//@1@@ ты добавить строку о shortcut'е Ctrl-Shift-<Up/Down/Left/Right>
+13_aug_2021: CILExtraANDReverseEngineering_Silent
+//@3@@ты перенести проект 18.2.2 в директория энциклопедии, дать ему новое имя.
+//    там оказаться иероглифы, и ты перевести часть текста обратно на правильна
+//    кодировка
+13_aug_2021: OurNew_Silent (from CodeFiles..cs)
+//@10@@ остановка здесь
+
+14_aug_2021: CILExtraANDReverseEngineering_Silent
+//@1@@ты завершить блок IL Program From Scratch
+14_aug_2021: CILExtraANDReverseEngineering_Silent
+//@2@@ты добавить блок про PEVerify
+14_aug_2021: CILExtraANDReverseEngineering_Silent
+//@3@@ты сделать скриншот того, как выглядить твоё производство, ты назвать этот
+//    скриншот how_it_works-2021_08aug_14.png
+14_aug_2021: CILTypes.il
+//@4@@ты перевести иероглифы, что ты встретил в этом файле, на русский язык.
+//    остановка здесь. ты очень хочешь продолжить
+
+15_aug_2021: IRL
+//@1@@интернет-друг показать истинину - работадателю по большей части всё-равно
+//    на мою библиотеку. Но ты ведь изначально делать эту энциклопедию не для
+//    того, чтобы затем этим хвастаться
+
+16_aug_2021: ./SemanticsAndSyntaxDeeper_18.3.2_ClassLibrary/CILTypes.il
+//@1@@ты перевести все комментарии этого файла с иероглиф на русский
+//@2@@ты завершить блок, где описываться определения классов, полей, методов,
+//    структур, перечислений. ты также завершить проект 18.3. начать проект 18.4
+//@3@@ты сделать блок Code Operators
+
+
+17_aug_2021: ./SemanticsAndSyntaxDeeper_18.3.1_ClassLibrary/CILTypes.il
+//@1@@ты добавить комментарий о директива .method
+
+17_aug_2021: ./LocalVariablesDefinition_18.4.1_SimpleFuncs/SomeCILInfo.il
+//@2@@остановка здесь. ты начать переводить этот файл с иероглиф на русский язык
+
+17_aug_2021: CILExtraANDReverseEngineering_Silent
+//@3@@ты завершить блок LocalVariablesDefinition
+
+17_aug_2021: CILExtraANDReverseEngineering_Silent
+//@4@@ты завершить блоки ParametersAndLocalVariablesDefinition_Silent и
+//    CyclesInCIL_Silent. ты завершить CodeFile18.4.cs. очень хочешь продолжить
+
+
+18_aug_2021: ./CILCarsDLL_18.5.1_TwoTypes/CILCars.il
+//@1@@ты перевести этот файл с иероглифов на русский
+
+18_aug_2021: CILExtraANDReverseEngineering_Silent
+//@2@@ты добавить инфо о порядке отправки аргументов в CIL
+
+18_aug_2021: CILExtraANDReverseEngineering_Silent
+//@3@@ты завершить блок AssemblyBuildingWithCIL. ты завершить CodeFile18.5.cs.
+//    очень хочешь продолжить
+
+
+19_aug_2021: DynamicAssemblies_Silent
+//@1@@ты начать файл CodeFile18.6.cs
+
+19_aug_2021: DynamicAssemblies_Silent
+//@2@@ты завершить блок Review
+
+19_aug_2021: DynamicAssemblies_Silent
+//@3@@ты завершить блок SystemReflectionEmit
+
+19_aug_2021: DynamicAssemblies_Silent
+//@4@@ты завершить блок SystemReflectionEmitILGenerator
+
+19_aug_2021: DynamicAssemblies_Silent
+//@5@@ты начать блок DynamicAssemblyEmission. очень хочешь продолжить
+
+19_aug_2021: SystemThreadingThread_Silent
+//@6@@ты создать этот метод
+
+19_aug_2021: DynamicAssemblies_Silent
+//@7@@остановка здесь. ты начать читать DynamicAssemblyEmission блок. очень
+//    хочешь продолжить
+
+
+20_aug_2021: DynamicAssembliesANDItsStuffANDCallingConvensions_Silent
+
+//@1@@ты прочитать и поправить блок DynamicAssemblyEmission
+20_aug_2021: CILExtraANDReverseEngineering_Silent
+//@2@@ты добавить пометку о том, что ilasm снабжает классы стандартным
+
+//    конструктором
+20_aug_2021: DynamicAssembliesANDItsStuffANDCallingConvensions_Silent
+//@3@@ты завершить блок UsingDynamicAssembly. этим ты завершить CodeFile18.6
+//@4@@ты решить оставить тему Threading на неопределённое время. ты решить
+//    тратить время на ASP.NET
+
+
+21_aug_2021: CSharpANDNETHistory_Silent
+//@1@@ты сделать вкрапление в блоке о релизах .NET. ты написать в этом
+
+//    вкраплении инфу о .NET Core
+21_aug_2021: NETAndBCL_Silent
+
+//@2@@ты сделать блок other .NETs
+21_aug_2021: NETAndBCL_Silent
+
+//@3@@ты сделать блок .NET Standrad
+21_aug_2021: ASPNETPreview_Silent
+//@4@@ты создать этот метод и написать блоки WhatItIs, ASP.NET History, MVC,
+//    Alternatives
+
+
+22_aug_2021: CSharpANDNETReleases_Silent
+//@1@@ты сделать ещё одну запись в блоке о релизы .NET. ты сделать запись о
+//    .NET Core 2.1
+
+22_aug_2021: ASPNETPreview_Silent
+//@2@@ты дополнить блок WhatItIs несколькими фактами из .NET Docs
+
+22_aug_2021: ASPNETPreview_Silent
+//@10@@ты дополнить блок ASP.NET History
+
+22_aug_2021: CRUD_Silent
+//@11@@ты создать этот метод
+
+22_aug_2021: ASPNETPreview_Silent
+//@11.5@@ты малость дополнить блок MVC
+
+22_aug_2021: ASPNETPreview_Silent
+//@13@@ты сделать блок Where you can put it
+
+22_aug_2021: ASPNETPreview_Silent
+//@14@@ты сделать блок How web works
+
+22_aug_2021: ASPNETPreview_Silent
+//   @15@@ты начать писать блок HTTP, www
+
+
+23_aug_2021: dotnet_Silent
+//@1@@ты добавить в блок o dotnet new инфу о том, что у шаблонов есть
+//    свои собственные аргументы (например, dotnet new webapi <args>)
+
+23_aug_2021: ASPNETPreview_Silent
+//@2@@ты создать блок REST
+
+23_aug_2021: ASPNETPreview_Silent
+//@3@@ты создать блок .NET HTTP REPL
+
+23_aug_2021: ASPNETPreview_Silent
+//@4@@ты создать блок HTTPS
+
+23_aug_2021: ASPNETPreview_Silent
+//@5@@ты создать блок Create your own webapi
+
+23_aug_2021: dotnet_Silent
+//@6@@ты добавить блок Bundled tools
+
+23_aug_2021: ASPNETPreview_Silent
+//@7@@ты создать блок Create your own webapp
+
+
+24_aug_2021: ASPNETPreview_Silent
+//@1@@ты дополнить блок Create your own webapp. ты завершить
+//    Tutorial: Get started with ASP.NET Core
+
+24_aug_2021: LinkingAssembliesANDXML_Silent
+//@2@@ты изменить имя этого метода с LinkingAssemblies_Silent на
+//     LinkingAssembliesANDXML_Silent
+
+
+25_aug_2021: CSharpANDNETReleases_Silent
+//@1@@ты добавить инфо в блок о операторах C# инфу о том, что .-ку ещё зовут dot
+//    и period в .NET Docs
+
+25_aug_2021: .NET Docs (in the net)
+//@2@@ты завершить Write your first C# code
+
+25_aug_2021: CSharpANDNETReleases_Silent
+//@3@@ты написать о том, что C# - это просто синтаксис. ты сделать отдельный
+//    блок
+
+25_aug_2021: CSharpANDNETReleases_Silent
+//@4@@ты добавить инфо в инсторию .NET Releases о том, солько .NET'чиков по
+//    всему миру
+
+25_aug_2021: VSCode_Silent
+//@5@@ты подправить расшифровку OSS
+
+25_aug_2021: VisualStudio_Silent
+//@11@@ты сделать блок Workload
+
+25_aug_2021: ASPNETPreview_Silent
+//@8@@ты добавить инфу в блок WhatItIs. ты написать, что ASP.NET Core -
+//    быстрейший фреймворк
+
+
+26_aug_2021: LinkingAssembliesANDXML_Silent
+//@1@@ты сделать для одного из блоков название "Do it manually, Nuget". ты
+//    добавить инфу о том, что в репозитории NuGet'ов можно публиковать пакеты
+//    небублично, с доступом не для всех. ты также добавить, что .NET Docs зовут
+//    репозиторий NuGet реестром. ты ещё добавить инфо о том, что NuGet пакет
+//    можно хранить и локально
+
+26_aug_2021: LinkingAssembliesANDXML_Silent
+//@6@@остановка здесь. ты на половину прочитать
+//    Add packages to your .NET project. очень хочешь продолжить
+
+
+27_aug_2021: dotnet_Silent
+//@1@@ты сделать блок о dotnet list
+
+27_aug_2021: dotnet_Silent
+//@2@@ты добавить инфо в блок о dotnet add о "transitive packages"
+
+27_aug_2021: dotnet_Silent
+//@3@@ты сделать блок о dotnet restore
+
+27_aug_2021: dotnet_Silent
+//@4@@ты сделать блок о подразделе dotnet tool
+
+27_aug_2021: Git_Silent
+//@5@@ты сделать этот метод
+
+27_aug_2021: dotnet_Silent
+//@6@@ты подправить инфу о dotnet add package
+
+27_aug_2021: dotnet_Silent
+//@7@@ты сделать блок о подразделе dotnet help. остановка здесь. очень хочешь
+//    продолжить читать man git tutorial
+
+
+28_aug_2021: Git_Silent
+//@1@@ты дополнить блок Commands
+
+28_aug_2021: Git_Silent
+//@2@@остановказ десь. ты писать о переменных окружения, что git построен
+//    читать. очень хочешь продолжить

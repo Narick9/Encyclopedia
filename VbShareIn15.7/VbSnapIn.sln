@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VbSnapIn", "VbSnapIn.vbproj", "{173A9E4E-FC23-4AFA-BDC9-2781F01DF6D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{173A9E4E-FC23-4AFA-BDC9-2781F01DF6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173A9E4E-FC23-4AFA-BDC9-2781F01DF6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173A9E4E-FC23-4AFA-BDC9-2781F01DF6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173A9E4E-FC23-4AFA-BDC9-2781F01DF6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CB290D7-FA10-4BCE-A876-D30148F0C57F}
+	EndGlobalSection
+EndGlobal

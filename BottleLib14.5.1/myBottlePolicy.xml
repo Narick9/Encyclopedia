@@ -1,0 +1,15 @@
+﻿<configuration>
+    <runtime>
+        <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">   <!-- xmlns - автор всё-ещё умалчивает про этот атрибут                 -->
+            <dependentAssembly>                                      <!-- dependentAssembly - применяются те же элементы, что и для обычных -->
+                                                                     <!--   конфигурационных файлах (для перенаправления)                   -->
+                <assemblyIdentity name="BottleLib"
+                                  publicKeyToken="c60d3B4598547336"
+                                  culture="neutral"/>  <!-- publicKeyToken - будь очень аккуратен при наборе элементов и атрибутов! Я       -->
+                                                       <!--   потратил 5 часов на то, чтобы понять, что прописал publicKeyToken не так      -->
+                <bindingRedirect oldVersion="1.0.0.0"
+                                 newVersion="2.0.0.0"/>
+            </dependentAssembly>
+        </assemblyBinding>
+    </runtime>
+</configuration>

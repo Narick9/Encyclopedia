@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <!--<TargetFramework>net47</TargetFramework>-->     <!-- <TargetFramework>net47.. - просто так взять и сменить .NET (он же бывший       -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>         <!--   .NET Core) на сильно отличающийся .NET Framework (по структуре) нельзя. VS   -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>  <!--   выдаст ошибку                                                                -->
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <StartupObject>_Processes_Threads_SystemDiagnosticsNamespace</StartupObject>
+    <ApplicationIcon />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.office.interop.excel" Version="15.0.4795.1000" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
+    <PackageReference Include="System.Windows.Extensions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="OtherProject\OtherProject.csproj" />
+    <ProjectReference Include="CommonShareableTypes15.7\CommonShareableTypes.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
