@@ -286,6 +286,9 @@ class _Git_ASPNETPreview
         //             M	changelog.txt
         //             Switched to branch 'experimental'
         //         
+        //     Теперь можно сделать несколько изменений и не беспокоится о их последствиях, ведь мы сейчас в ветке "experimental" (а она живёт
+        //         отдельно от основной ветки "master". За'commit'им эти изменения, запустив команду    git commit -a    . Вернёмся снова на
+        //         ветку "master", запустив    git switch master    
         //         
         //         
 
