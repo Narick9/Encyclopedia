@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  12 dec 2020
- * last change    26 jun 2021
+ * last change    01 sep 2021
  * author  artur
  */
 using System;
@@ -21,8 +21,9 @@ partial class ClassAndInterface_StructAndOOPAndSystemNullable
         Console.WriteLine(">->->->->->->->->->->->->->->->->->->   Class_Silent()\n");
 
 
-        // В .NET классы - это всегда "ссылочный тип". Это значит, что их что переменные классов - это всего лишь ссылки на сам объект класса,
+        // В .NET классы - это всегда "ссылочный тип". Это значит, что их переменные - это всего лишь ссылки на сам объект класса,
         //   хранящегося в это время управляемой части кучи со сборкой мусора
+        //@1@@ты исправить опечатка в самом начале
 
 
         // Каждый .NET язык, по меньшей мере, поддерживает тип класса (ведь без BCL в .NET вообще никак). Класс - это краеугольный камень всего
@@ -183,7 +184,7 @@ partial class ClassAndInterface_StructAndOOPAndSystemNullable
         Console.WriteLine("Rider name is {0}\n", fredric.driverName);        //   объясняется что такое this, как строить цепочку
                                                                              //   конструкторов, а также для чего нужен статический конструктор
 
-        //Console.WriteLine(fredric.driverIntensityAverbirthYear);                 // fredric.driverIntensityAverbirthYear - это статическое поле
+        //Console.WriteLine(fredric.driverIntensityAverbirthYear);               // fredric.driverIntensityAverbirthYear - это статическое поле
         //    находится на уровне типа, а не на уровне экземпляра. Оно
         //    появилось ещё до создания fredric'а, и доступ к нему открыт
         //    только через тип:
