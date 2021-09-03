@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  02 jul 2021
- * last change    01 sep 2021
+ * last change    03 sep 2021
  * author         artur
  */
 
@@ -444,3 +444,13 @@
 
 01_aug_2021: Git_Silent
 //@2@@ты добавить инфо о разделах git branch and git switch
+
+
+02_aug_2021: Git_Silent
+//@1@@ты добавить инфо в часть про git merge
+
+02_aug_2021: Git_Silent
+//@2@@ты сделать часть про git clone
+
+02_aug_2021: Git_Silent
+//@3@@ты начать часть про git pull. очень хочешь продолжить
