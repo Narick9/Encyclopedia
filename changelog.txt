@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  02 jul 2021
- * last change    03 sep 2021
+ * last change    04 sep 2021
  * author         artur
  */
 
@@ -439,18 +439,23 @@
 //    синопсис разедлов. очень хочешь продолжить
 
 
-01_aug_2021: Class_Silent
+01_sep_2021: Class_Silent
 //@1@@ты исправить опечатка в самом начале
 
-01_aug_2021: Git_Silent
+01_sep_2021: Git_Silent
 //@2@@ты добавить инфо о разделах git branch and git switch
 
 
-02_aug_2021: Git_Silent
+02_sep_2021: Git_Silent
 //@1@@ты добавить инфо в часть про git merge
 
-02_aug_2021: Git_Silent
+02_sep_2021: Git_Silent
 //@2@@ты сделать часть про git clone
 
-02_aug_2021: Git_Silent
+02_sep_2021: Git_Silent
 //@3@@ты начать часть про git pull. очень хочешь продолжить
+
+
+03_sep_2021: Git_Silent
+//@7@@теперь ты не пишешь отсчёты о сделанная работа в файл changelog.txt,
+//    теперь ты писать отсчёты в git
