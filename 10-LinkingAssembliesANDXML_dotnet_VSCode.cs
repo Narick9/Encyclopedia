@@ -281,16 +281,19 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //         <Project Sdk="Microsoft.NET.Sdk">
         //           ..
         //           <ItemGroup>
-        //             <PackageReference Include="System.Windows.Extensions" Version="5.0.0" />
-        //             <PackageReference Include="Newtonsoft.Json"/>
-        //           </ItemGroup>
-        //         
-        //           <ItemGroup>
-        //             <ProjectReference Include="OtherProject\OtherProject.csproj" />
-        //           </ItemGroup>
-        //         
-        //         </Project>
-        //  
+        //             <PackageReference Include="System.Windows.Extensions" Version="5.0.0" />  // Version=".." - здесь ты можешь поиграться
+        //             <PackageReference Include="Newtonsoft.Json"/>                             //   Например, задав "6.*", после каждого
+        //           </ItemGroup>                                                                //   resolving (разрешения зависимостий) ты
+        //                                                                                       //   будешь получать последнюю 6.x.x версию
+        //           <ItemGroup>                                                                 //   /////////after reading: dotnet///////////
+        //             <ProjectReference Include="OtherProject\OtherProject.csproj" />           //   // (о том, когда происходит resolving
+        //           </ItemGroup>                                                                //   // написано в методе о dotnet
+        //                                                                                       //   /////////////////////////////////////////
+        //         </Project>                                                                    //   . Ещё можно задать range'и. Например,
+        //                                                                                       //   "[1.3.2,1.5)" - братю последнюю доступную
+        //                                                                                       //   версию от 1.3.2 (включая) до 1.5.* (не
+        //                                                                                       //   включая)
+        //                                                                                       
         //   Что именно мы подключаем к нашему проекту? - другой проект или "NuGet пакет". Что за NuGet? Тут нужно немного истории.
         //     Microsoft'цы, не желая чтобы их новое и ещё неиспорченное поделие (.NET) использовалось легко не только в разработке, но также и
         //     в распространении, решили создать к нему простенький distribution механизм (т.е. чтоб сборки одного чувака легко могли
@@ -657,7 +660,8 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //       
 
 
-        // Если ты хочешь посмотреть на имеющиеся у твоего проекта зависимости, воспользуйся подразделом dotnet list. Вот синопсис:
+        // Если ты хочешь посмотреть на имеющиеся у твоего проекта зависимости (т.е. подключённые NuGet пакеты), воспользуйся подразделом
+        //     dotnet list. Вот синопсис:
         //
         //       dotnet list [options] <..csproj or ..sln> [command]
         //
@@ -669,14 +673,14 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //
         //       dotnet list <..csproj or ..sln> package [options]    - выведет package зависимости этого проекта/решения. В [options] можно
         //                                                              тонко настроить что ты именно хочешь увидеть:
-        //                                                                  --include-transitive        - с этим ты получишь не только
+        //                                                                  --include-transitive        - получить не только
         //                                                                                                top-level зависимости (список
         //                                                                                                зависимостей мгновенно вырастит
         //                                                                                                многократно)
-        //                                                                  
-        //                                                                  
-        //                                                                  
-        //                                                                  
+        //                                                                  --outdated                  - вывести устаревшие NuGet пакеты
+        //                                                                                                твоего проекта/решения (заодно скажет
+        //                                                                                                , какие версии этих пакетов сейчас
+        //                                                                                                актуальны)
         //
         //       dotnet list <..csproj or ..sln> reference [options]  - выведет reference зависимости. [options] здесь всего одна:
         //                                                                  -h, --help  - выведет очень небольшое описание с этим же синопсисом
@@ -713,7 +717,8 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //****dotnet publish
 
 
-        // Если ты почему-то хочешь вручную проверить/скачать зависимости твоего проекта, используй подраздел dotnet restore. В большинстве
+        // Если ты почему-то хочешь вручную проверить/скачать зависимости твоего проекта, используй подраздел dotnet restore
+        //   (restoring/resolving - синонимы, но раздел зовётся именно dotnet restore). В большинстве
         //   случаев тебе не нужно будет делать это самим, т.к. dotnet cli сделает это за тебя во время юзания dotnet new/build/run. Это
         //   действие пригодится, если ты скопировал проекта на другой компьютер, где этих зависимостей нет, и тебе не хочется долго компилить
         //   всё для их скачивания. Синопсис у этого подраздела таков:

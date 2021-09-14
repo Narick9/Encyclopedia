@@ -802,7 +802,7 @@ class _Git_ASPNETPreview
         //     
 
 
-        // You got info from these resources:
+        // You got info from these resources
         //     
         //     > Изначально из man-страниц git'а, но там слишком много инфы (а gittutorial объяснял очень поверхностно)
         //     > Позже я полез в интернет, и нашёл прекрасный сайт https://www.atlassian.com/git/tutorials/syncing, где поясняется немного
