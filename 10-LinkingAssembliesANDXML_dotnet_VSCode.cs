@@ -581,8 +581,13 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //                                                                     </Project>
         //                                                                 Это получилось после ввода команды
         //                                                                     dotnet add package System.Windows.Extensions    в корневой
-        //                                                                 директории этого проекта
-        //
+        //                                                                 директории этого проекта. ****На самом деле об этом уже рассказывалось
+        //                                                                 в методе LinkingAssemblies
+        //                                                                 
+        //                                                                 Если ты повторно сделаешь dotnet add к уже имеющемуся пакету, то
+        //                                                                 dotnet проведёт resolving этого пакета (т.е. перейдёт на новую его
+        //                                                                 версию)
+        //                                                                 
         //                                                                 Какие имеются [options]? Эти:
         //                                                                     -h, --help
         //                                                                     -v, --version <version>        подключить именно эту версию
@@ -604,7 +609,7 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //                                                                                                    действия ****хз зачем это,
         //                                                                                                    эффекта нет
         //                                                                     --prerelease                   разрешить использовать
-        //                                                                                                    пререлизную версию
+        //                                                                                                    пререлизную версию этого пакета
         //       dotnet add <..csproj> reference [options] <..csproj>      добавить в текущий <..csproj> ссылку к другому <..csproj>. Первый
         //                                                                 <..csproj> (тот, к которому ты ссылку и привязываешь) можно опустить
         //                                                                 , тогда dotnet add попытается найти .csproj в текущей директории.
@@ -631,7 +636,7 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //                                                                 Напомню, что ты не сможешь добавить ссылку на проект, что нацелен
         //                                                                 на несовместимый фреймворк (т.е. на фреймворк более старой версии.
         //                                                                 или совсем переделанной новой)
-        //
+        // 
         // Однажды у меня вышла такая ошибка:
         //     [root@fedora Codewars]# dotnet add package System.Numberics
         //       Determining projects to restore...
@@ -681,6 +686,9 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         //                                                                                                твоего проекта/решения (заодно скажет
         //                                                                                                , какие версии этих пакетов сейчас
         //                                                                                                актуальны)
+        //                                                                  --include-prerelease        - учитывать ещё и пререлизные версии.
+        //                                                                                                Ставится это в паре с --outdated
+        //                                                                                                
         //
         //       dotnet list <..csproj or ..sln> reference [options]  - выведет reference зависимости. [options] здесь всего одна:
         //                                                                  -h, --help  - выведет очень небольшое описание с этим же синопсисом

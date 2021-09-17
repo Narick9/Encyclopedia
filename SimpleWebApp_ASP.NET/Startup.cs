@@ -11,8 +11,8 @@ using Microsoft.Extensions.Hosting;
 
 namespace SimpleWebApp_ASP.NET
 {
-    public class Startup
-    {
+    public class Startup                    // Startup - ты уже знаешь, что этот класс просто конфигурирует сервисы и конвеер запросов
+    {                                       //   приложения
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
