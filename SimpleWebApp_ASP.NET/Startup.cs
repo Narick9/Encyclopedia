@@ -11,9 +11,8 @@ using Microsoft.Extensions.Hosting;
 
 namespace SimpleWebApp_ASP.NET
 {
-    public class Startup                    // Startup - ты уже знаешь, что этот класс просто конфигурирует сервисы и конвеер запросов
-    {                                       //   приложения(****всё ещё незнаешь что это)
-                                            // Имя Startup выбрано по соглашению (****только класс с таким именем будет работать?)
+    public class Startup
+    {
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -22,14 +21,14 @@ namespace SimpleWebApp_ASP.NET
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)  // ConfigureServices() - этот метод отвечает за конфигурирование
-        {                                                           //   сервисов приложения (этот метод не обязателен). ASP.NET Core runtime
-            services.AddRazorPages();                               //   вызывет этот метод во время старта (поэтому имя менять не следует)
+        public void ConfigureServices(IServiceCollection services)
+        {                                                         
+            services.AddRazorPages();                            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)  // Configure() - а этот отвечает за конвеер запросов.
-        {                                                                        //   ASP.NET Core runtime будет вызывать его
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {                                                                      
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
