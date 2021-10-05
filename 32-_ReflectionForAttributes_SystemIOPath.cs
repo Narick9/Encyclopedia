@@ -1,6 +1,6 @@
 /*
  * creation date  11 jun 2021
- * last change    28 jun 2021
+ * last change    25 sep 2021
  * author         artur
  */
 using System;
@@ -86,7 +86,7 @@ class _ReflectionForAttributes_SystemIOPath
         Console.WriteLine(">->->->->->->->->->->->->->->->->->->   SystemIOPath()");
 
 
-        // System.IO.Path - статический (но не запечатанных класс), что
+        // System.IO.Path - статический (и поэтому запечатанный) класс, что
         //   хранит в себе методы для работы со строковыми путями
 
 

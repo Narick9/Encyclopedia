@@ -234,7 +234,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
       "System.IO.FileSystem.Primitives/4.3.0": {
@@ -243,7 +243,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
@@ -2224,47 +2224,41 @@
       "OtherProject >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 5.0.0",
       "System.Diagnostics.Process >= 4.3.0",
+      "System.IO.FileSystem >= 4.3.0",
       "System.Windows.Extensions >= 5.0.0",
       "microsoft.office.interop.excel >= 15.0.4795.1000"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\musli\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/art/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\dotnetCoreVersion.csproj",
+      "projectUniqueName": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/dotnetCoreVersion.csproj",
       "projectName": "dotnetCoreVersion",
-      "projectPath": "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\dotnetCoreVersion.csproj",
-      "packagesPath": "C:\\Users\\musli\\.nuget\\packages\\",
-      "outputPath": "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\obj\\",
+      "projectPath": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/dotnetCoreVersion.csproj",
+      "packagesPath": "/home/art/.nuget/packages/",
+      "outputPath": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\musli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/art/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\CommonShareableTypes15.7\\CommonShareableTypes.csproj": {
-              "projectPath": "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\CommonShareableTypes15.7\\CommonShareableTypes.csproj"
+            "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/CommonShareableTypes15.7/CommonShareableTypes.csproj": {
+              "projectPath": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/CommonShareableTypes15.7/CommonShareableTypes.csproj"
             },
-            "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\OtherProject\\OtherProject.csproj": {
-              "projectPath": "D:\\dev_2021-07jul-18\\c#-2021_07jul_29\\Troelsen_yasik-programmirovaniya-csharp-7\\MySummary-2021_07jul_29\\dotnetCoreVersion-you_have_refresh_file_names-2021_06jun_28\\OtherProject\\OtherProject.csproj"
+            "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/OtherProject/OtherProject.csproj": {
+              "projectPath": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/OtherProject/OtherProject.csproj"
             }
           }
         }
@@ -2284,6 +2278,10 @@
             "version": "[5.0.0, )"
           },
           "System.Diagnostics.Process": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "System.IO.FileSystem": {
             "target": "Package",
             "version": "[4.3.0, )"
           },
@@ -2311,7 +2309,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/nix/store/6bzslqa59v94hh1nf7sszrsrzc9g0x99-dotnet-sdk-5.0.202/sdk/5.0.202/RuntimeIdentifierGraph.json"
       }
     }
   },

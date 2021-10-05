@@ -84,6 +84,10 @@ class IntelliSenseANDCodeLens_ObjectBrowser
         //                                          //   OmniSharp последней версии
 
 
+        // VS Code'овский IntelliSense довольно таки ленив. Установку новой библиотеки заметит только после перезапуска (****проверено на
+        //   1-ой библиотеке)
+
+
         Console.WriteLine("<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<   IntelliSenseANDCodeLens_Silent()");
     }
     static void ObjectBrowser_Silent()

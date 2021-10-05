@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  01 jan 2020
- * last change    21 sep 2021
+ * last change    03 oct 2021
  * author         artur
  */
 using System;
@@ -900,7 +900,7 @@ class LinkingAssembliesANDXML_dotnet_VSCode
         // Если же кочется хоть как-то писать не вслепую, видя ошибки, то читай дальше
         //
         // Как познакомить VS Code (Code - OSS) с C# поближе? Достаточно установить расширение C#, что VS Code (Code - OSS) сам предложет тебе
-        //   сделать при открывании .cs файла (VS Code предложит поставить расширение C# от самого Microsoft. Code - OSS предложит реализацию
+        //   сделать при открывании .cs файла (VS Code предложит поставить расширение C# от самого Microsoft). Code - OSS предложит реализацию
         //   от некого muhammad-sammy (т.к. debugger Microsoft'а - целиком принадлежит Microsoft'у). Разницы между этими 2-мя debugger'ами не
         //   замечено
         // Расширение от Microsoft поставит тебе сразу 2-е штуки (и аналог скорее всего тоже):
@@ -1108,7 +1108,7 @@ class LinkingAssembliesANDXML_dotnet_VSCode
 
         /////////after reading///////////////////////////////////////////////////////////////////////
         // IntelliSense в VS Code однажды повёл себя странно. При подключении сборки
-        //   System.Runtime.Numerics.dll для использования System.Numerics.BigInteger этой самой
+        //   System.Runtime.Numerics.dll для использования System.Numerics.BigInteger, этой самой
         //   структуры BigInteger не было в предложеном списке. Хотя таки создав переменную и
         //   скомпилировав проект ошибки не возникло ****может виноваты ассеты в папках .vs или
         //   .vscode?

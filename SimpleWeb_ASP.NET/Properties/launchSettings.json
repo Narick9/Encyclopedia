@@ -1,0 +1,33 @@
+﻿{
+  "iisSettings": {
+                                                    "__comment": "// iisSettings --- как видишь, по умолчанию используем мы IIS сервер
+                                                                  //   (****но это не точно)"
+                                                    ,
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:34550",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "SimpleWeb_ASP.NET": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000",    "__comment": "// profiles.<project>.applicationUrl --- URL твоего проекта (который уже
+                                                                  //   сайт)"
+      ,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
