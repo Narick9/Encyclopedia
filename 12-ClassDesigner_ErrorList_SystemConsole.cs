@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  12 dec 2020
- * last change    26 jun 2021
+ * last change    12 oct 2021
  * author         artur
  */
 using System;
@@ -110,12 +110,19 @@ class ClassDesigner_ErrorList_SystemConsole
                                                          //   2-а вызова? А из-за того, что в винде новая строка - это два символа: "\r\n" (на
                                                          //   сколько я помню, ещё со времён MS-DOS)(а не стандартное Unix'овское '\n')
 
+        Console.ReadKey();                               // ReadKey() - считывает и возвращает нажатый символ на клавиатуре. Метод не
+                                                         //   завершится, пока клавиша не будет нажата
+        Console.ReadKey(true);                           // ReadKey(..) - вторая версия этого метода принимает bool, указывающий, надо ли
+                                                         //   выводить нажатый символ на экране (по умолчанию все Read-методы разрешают
+                                                         //   консоли делать это)
+
         Console.Clear();                                 // Clear() - стандартная чистка экрана. cmd в винде просто опускается вниз (также, как
         Console.WriteLine("---musya");                   //  в консоли Unix'ов), а затем удаляет предыдущие записи (в Unix'ах они сохраняются).
         Console.ReadLine();                              //  Это поведение, кстати, обновляет весь фон у нас
 
         Console.ResetColor();                            // ResetColor() - этот метод сбросит цвета в консоли. Возвращает void
         Console.Clear();
+
 
 
         Console.Write("Please enter your name: ");

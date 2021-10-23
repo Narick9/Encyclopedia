@@ -1,7 +1,7 @@
 ﻿{
   "iisSettings": {
-                                                    "__comment": "// iisSettings --- как видишь, по умолчанию используем мы IIS сервер
-                                                                  //   (****но это не точно)"
+                                                    "__comment1":   "// iisSettings --- как видишь, по умолчанию используем мы IIS сервер",
+                                                    "__comment2":   "//   (****но это не точно)"
                                                     ,
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -22,8 +22,8 @@
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5000",    "__comment": "// profiles.<project>.applicationUrl --- URL твоего проекта (который уже
-                                                                  //   сайт)"
+      "applicationUrl": "http://localhost:5000",    "__comment1":   "// profiles.<project>.applicationUrl --- URL твоего проекта (который уже",
+                                                    "__comment2":   "//   сайт)"
       ,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

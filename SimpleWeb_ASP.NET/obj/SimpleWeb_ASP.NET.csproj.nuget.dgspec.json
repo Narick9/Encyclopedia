@@ -10,11 +10,11 @@
         "projectUniqueName": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/SimpleWeb_ASP.NET/SimpleWeb_ASP.NET.csproj",
         "projectName": "SimpleWeb_ASP.NET",
         "projectPath": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/SimpleWeb_ASP.NET/SimpleWeb_ASP.NET.csproj",
-        "packagesPath": "/root/.nuget/packages/",
+        "packagesPath": "/home/art/.nuget/packages/",
         "outputPath": "/media/terrobyte/dev_2021-08aug-10/c#-2021_08aug_10/Troelsen_yasik-programmirovaniya-csharp-7/MySummary-2021_08aug_10/dotnetCoreVersion-you_created_changelog-work_here/SimpleWeb_ASP.NET/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/art/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

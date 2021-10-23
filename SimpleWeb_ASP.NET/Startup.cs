@@ -45,58 +45,124 @@ namespace SimpleWeb_ASP.NET
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)  // Configure() --- этот метод отвечает за конвеер запросов, и
-        {                                                                        //   он обязательный. Он принимает 2'а аргумента, второй из
-                                                                                 //   них необязателен
-                                                                                 // Microsoft.AspNetCore.Builder.IApplicationBuilder ---
-                                                                                 //   интерфейс, что определяет объекты-appbuilder'ы
+        {                                                                        //   он обязательный. Он принимает 2'а аргумента (второй
+                                                                                 //   необязателен)
+                                                                                 //   
+                                                                                 //   
+                                                                                 //     Microsoft.AspNetCore.Builder.IApplicationBuilder ---
+                                                                                 //       интерфейс, что определяет объекты-appbuilder'ы
+                                                                                 //       
+                                                                                 //           Интерфейсу посвящён отдельный метод
                                                                                  //
-                                                                                 //   Наш метод Configure() принимает один из таких объектов
-                                                                                 //   в параметр app
-                                                                                 // Microsoft.AspNetCore.Hosting.IWebHostEnvironment ---
-                                                                                 //   интерфейс, что определеяет объекты, поставляющие методы
-                                                                                 //   для получения инфо о нашем приложении (sic!) и методы
-                                                                                 //   для взаимодействии с ним
+                                                                                 //       В наш метод Configure() отправится один из таких
+                                                                                 //         объектов-appbuilder'ов, который мы здесь и
+                                                                                 //         сконфигурируем
+                                                                                 //
+                                                                                 //     Microsoft.AspNetCore.Hosting.IWebHostEnvironment ---
+                                                                                 //       объекты этого интерфейса будут иметь методы
+                                                                                 //       для взаимодействии с нашим приложением (и методы
+                                                                                 //       для получения инфо о нём (sic!))
                                                                                  //   
-                                                                                 //   У нас здесь это параметр env
-            if (env.IsDevelopment())                                             // bool env.IsDevelopment() --- приложение в процессе
-            {                                                                    //   разработки (т.е. под статусом Development)?
-                app.UseDeveloperExceptionPage();                                 // ..IApplicationBuilder app.UseDeveloperExceptionPage() ---
-                                                                                 //   то заставить будущее приложение вывести все пойманные
-                                                                                 //   exceptions в отдельную HTML error страницу
+                                                                                 //   Метод Configure вызовется всего один раз, при создании
+                                                                                 //     объекта класса Startup
                                                                                  //   
-                                                                                 //   В статусе Production такие сообщения нежелательно, ведь
-                                                                                 //   трассировка об ошибках может раскрыть какую-то инфо о
-                                                                                 //   структуре сайта
+                                                                                 // Почему конвеер? Потому что запрос, приходящий В
+                                                                                 //   виде (****в виде чего?) сначала проходит в первый
+                                                                                 //   компонент, затем второй и так далее, пока кто-то из них
+                                                                                 //   не выполнит запрос окончательно
+                                                                                 //   
+                                                                                 //     "Компонент" в ASP.NET Core - это ****что-то.
+                                                                                 //       Компоненты конфигурируются через методы расширений
+                                                                                 //       Run..(), Map..() и Use..() в объектах
+                                                                                 //       ...IApplicationBuilder
+                                                                                 //   
+            if (env.IsDevelopment())                                             //     bool env.IsDevelopment() --- приложение в процессе
+            {                                                                    //       разработки (т.е. под статусом Development)?
+                app.UseDeveloperExceptionPage();                                 //     ...IApplicationBuilder app.UseDeveloperExceptionPage()
+                                                                                 //       --- задействовать компнонет DeveloperExceptionPage
+                                                                                 //       (ещё его называют компонентом Diagnostics).
+                                                                                 //       Это заставит будущее приложение вывести все
+                                                                                 //       пойманные exceptions в отдельную HTML error страницу
+                                                                                 //       
+                                                                                 //       В статусе Production такие сообщения нежелательно,
+                                                                                 //         ведь трассировка об ошибках может раскрыть какую-то
+                                                                                 //         инфо о структуре сайта
             }
 
-            app.UseRouting();                                                    // ..IApplicationBuilder app.UseRouting() --- будущее
-                                                                                 //   приложение будет использовать маршрутизацию
-                                                                                 //   (****что именно произойдёт?)
+            app.UseRouting();                                                    //     ...IApplicationBuilder app.UseRouting() --- 
+                                                                                 //       Задействовать компонент EndpointRoutingMiddleware.
+                                                                                 //       Это заставит приложение будет использовать
+                                                                                 //       маршрутизацию (****что именно произойдёт?)
 
-            app.UseEndpoints(endpoints =>                                        // ..IApplicationBuilder app.UseEndpoints(..) ---
-            {                                                                    //   устанавливаем адреса, что будут обрабатываться ещё не
-                                                                                 //   построенным приложением
+            app.UseEndpoints(endpoints =>                                        //     ...IApplicationBuilder app.UseEndpoints(..) ---
+            {                                                                    //       задействовать компонент EndpointMiddleware.
+                                                                                 //       Это заставит приложение отправлять ответы на запросы
+                                                                                 //       по заданным адресам
+                                                                                 //
+                                                                                 //       У метода один параметр - Action<..IEndPointRouteBuilder>
+                                                                                 //       
+                                                                                 //           Интерфейс
+                                                                                 //           Microsoft.AspNetCore.Routing.IEndpointRouteBuilder
+                                                                                 //           - это уже builder маршрута (builder адреса)
+                                                                                 //       
+                                                                                 //       В соответсвии с шаблоном мы отправляем лябмда-выражение,
+                                                                                 //       параметр которого назван endpoints
+                                                                                 //
+                endpoints.MapGet("/", async context =>                           //         endpoints.MapGet(..) --- обработка запроса.
+                {                                                                //
+                    await context.Response.WriteAsync("Hello World!");           //     
+                                                                                 //           > "/" --- если юзер постучится в корневой раздел
+                                                                                 //           > await context.Response.WriteAsync(..) --- то
+                                                                                 //             отправить ответ строкой "Hello World!"
                                                                                  //   
-                                                                                 //   У метода один параметр - Action<..IEndPointRouteBuilder>
+                                                                                 //   Эти компоненты, обрабатывающие HTTP-запросы, зовутся
+                                                                                 //     "middleware"
                                                                                  //   
-                                                                                 //       Интерфейс
-                                                                                 //       Microsoft.AspNetCore.Routing.IEndpointRouteBuilder
-                                                                                 //       - это уже builder маршрута, т.е. билдер адреса
-                                                                                 //   
-                                                                                 //   В соответсвии с шаблоном мы отправляем лябмда-выражение,
-                                                                                 //   параметр которого назван endpoints
-                endpoints.MapGet("/", async context =>                           // endpoints.MapGet(..) --- обработка запроса. Получаем
-                {                                                                //   контекст запроса в виде объекта context (****непонятно)
-                    await context.Response.WriteAsync("Hello World!");           // await context.Response.WriteAsync(..) --- отправка ответа
-                                                                                 //   в виде строки "Hello World!"
-                                                                                 //   
-                                                                                 //   
-                                                                                 //   
+                                                                                 //   Порядок задействования компонентов, кстати, тоже важен
+                                                                                 //       
+                                                                                 //       Если поменять местами app.UseEndpoints() и
+                                                                                 //         app.UseRouting(), то app.UseEndpoints() выдаст
+                                                                                 //         исключение. Этот метод ожидал, что в app уже
+                                                                                 //         задеуйствуется компонент маршрутизации
+                                                                                 //       
+                                                                                 //   Знай, что, т.к. метод Configure() вызывется лишь один раз
+                                                                                 //     , все задействованные здесь компоненты останутся в
+                                                                                 //     приложении до конца (т.е. все запросы проходят через
+                                                                                 //     одни и те же компоненты)
+
                 });
+
+
+
+
+                int x = 2;
+                app.Run(async (context) =>
+                {
+                    x = x * 2;
+                    await context.Response.WriteAsync($"Result: {x}");  // x --- вроде как 2 * 2 = 4. Так и будет в первый раз, но ты обнови
+                                                                        //   страницу (получишь 8-ку)!
+                                                                        //   
+                                                                        //     Но на chromium-браузерах (вроде opera) ты скорее всего
+                                                                        //       получишь 8-ку сразу, т.к. они за каким-то фигом могут посылать
+                                                                        //       сразу по 2-а запроса (один к нашему приложению app, второй
+                                                                        //       к иконке favicon.ico (****а что это?))
+                });                                                     // app.Run(..) - это просетйший способ добавления своего компонента в
+                                                                        //   конвеер
+                                                                        //     
+                                                                        //   Правда, компонент, добавленный через Run(), не вызывет
+                                                                        //     следующий компонент и дальше обработку запроса не передаёт
+                                                                        //   
+                                                                        //   Принимает метод app.Run() делегат
+                                                                        //     Microsoft.AspNetCore.Http.RequestDelegate, что объявлен так:
+                                                                        //   
+                                                                        //         public delegate ...Task RequestDelegate (...HttpContext context)
+                                                                        //   
+
+
             });
         }
 
 
-        // Также опционально ты можешь выставить ctor в этом классе
+        // Также опционально ты можешь выставить ctor в этом классе, что, как правило, производит начальную конфигурацию приложения
     }
 }

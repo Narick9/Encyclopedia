@@ -149,15 +149,23 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Routing": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
             "System.Diagnostics.Process": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.IO.FileSystem": {
               "target": "Package",
               "version": "[4.3.0, )"
             },
