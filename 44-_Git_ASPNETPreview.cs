@@ -1,6 +1,6 @@
 /*
  * creation date  21 aug 2021
- * last change    07 oct 2021
+ * last change    24 oct 2021
  * author         artur
  */
 using System;
@@ -970,7 +970,7 @@ class _Git_ASPNETPreview
         //               --ours, --theirs           -
         //               -b                         - создать новый <branch> и переключиться на него. ****также что-то про <start_point>
         //               -B                         - 
-        //               --
+        //               --merge, -m                - ****
         //               --
         //           
 
