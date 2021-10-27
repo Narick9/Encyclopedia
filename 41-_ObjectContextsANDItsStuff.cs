@@ -1,10 +1,10 @@
 /*
- * creation date  04 aug 2021
- * last change    04 aug 2021
+ * creation date  26 oct 2021
+ * last change    26 oct 2021
  * author         artur
  */
 using System;
-using System.Runtime.Remoting.Contexts;
+//using System.Runtime.Remoting.Contexts;  //****такого namespace'а нету в .NET Core (и .NET 5)
 
 class _ObjectContextsANDItsStuff
 {
@@ -95,13 +95,15 @@ class _ObjectContextsANDItsStuff
         //     представь, что бы могло произойти с подобными производственными объектами в небезопасном к потокам контексте!)
         //   Для наглядности был создан ещё один класс - SportsCar, но он контексто-свободен
         //
-            new SportsCarTS();  // new SportsCarTS() - конструктор этого класса выведет некоторую полезную информацию для нас
-            new SportsCar();    // new SportsCar() - конструктор этого котнекстно-безопасного класса сделает то же самое (тем же кодом). Здесь
-            new SportsCar();    //   было создано два объекта типа SportsCar, из конструкторов обоих мы узнали, что оба этих объекта находятся
-        //                      //   в контексте 0
-        //                      // При выполнении можно увидеть, что в обоих контекстах имеется свойство LeaseLifeTimeServiceProperty. Это
-        //                      //   свойство представляет собой низкоуровневый аспект уровня удалённой обработки .NET и может быть
-        //                      //   проигнорированно
+        //new SportsCarTS();  // new SportsCarTS() - конструктор этого класса выведет некоторую полезную информацию для нас
+        //new SportsCar();    // new SportsCar() - конструктор этого котнекстно-безопасного класса сделает то же самое (тем же кодом). Здесь
+        //new SportsCar();    //   было создано два объекта типа SportsCar, из конструкторов обоих мы узнали, что оба этих объекта находятся
+        //                    //   в контексте 0
+        //                    // При выполнении можно увидеть, что в обоих контекстах имеется свойство LeaseLifeTimeServiceProperty. Это
+        //                    //   свойство представляет собой низкоуровневый аспект уровня удалённой обработки .NET и может быть
+        //                    //   проигнорированно
+        //                    //****всё закомменчено, т.к. класс System.Runtime.Remoting.Contexts.SynchronizationAttribute
+        //                    //    не входит в .NET Core (.NET 5)
 
 
         // Afterword
@@ -113,41 +115,41 @@ class _ObjectContextsANDItsStuff
 
         Console.WriteLine("<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<   ObjectContextsANDItsStuff_Silent()");
     }
-        [MySynchronization]                     // [..] - этим атрибутом мы сделаем наш класс контекстно-связанным, и его экземпляры попадут в
-                                                //   контекст для объектов, требующих безопасности при работе с потоками (этот контекст будет
-                                                //   создан при первом появлении экземпляра SportCarTS). Т.к. класс SportsCar будет унаследован
-                                                //   от SportCarTS, а атрибут [Synchonization] действует и на дочерние классы, я сделал свой
-                                                //   собственный атрибут-пустышку, наследующий ..SynchronizationAttribute, но не действующий на
-                                                //   классы, что находятся ниже в древе наследования
-                                                // Просто создать конструктор в SportsCar, а
-                                                //   затем унаследовать его в тип ниже было нельзя, т.к. тип ниже не может наследовать два
-                                                //   нужных ему класса (****слабопонятно)
-        class SportsCarTS : ContextBoundObject  // SportsCarTS - наш потокобезопасный класс (TS - Thead Safe)
-        {                                       // : ContextBoundObject - благодаря унаследованию этого типа CLR не будет двигать объект в
-                                                //   другие контексты, и объект останется в благоприятном для себя контексте
-            public SportsCarTS()
-            {
-                Context currContext = System.Threading.Thread.CurrentContext;                               // ctor() - для наглядности мы
-                Console.WriteLine("{0} object is in context {1}", this.ToString(), currContext.ContextID);  //   здесь выведем свойства
-                Console.WriteLine("Here are all properties of this context");                               //   контекста, в котором будет
-                foreach (IContextProperty curr in currContext.ContextProperties)                            //   находиться новый объект
-                {                                            // ..CurrentContext - это статическое свойство // ..Context - объекты этого класса
-                    Console.WriteLine("-> {0}", curr.Name);  //   класса ..Thread выдаст тебе контекст, в   //   могут хранить инфо о неком
-                }                                            //   котором работает текущий поток            //   контектсе. Это крохотный класс
-                Console.WriteLine();                         // ..ContextProperties - этим {get;} свойством // ..ContextID - здесь будет
-            }                                                //   мы получим все свойства (требования)      //   выведено, что мы находится в
-        }                                                    //   полученного контекста (автор называет их  //   контексте 1
-                                                             //   дескрипторами)                            // curr - мы получим массив
-                                                             // curr.Name - просто название свойства (метод //   крохотных типов (в них всего
-                                                             //   ToString() не переопределён и выводит     //   3 новых члена)
-                                                             //   просто полное имя типа объекта)           //
-        class SportsCar : SportsCarTS        // SportsCar - этот класс не будет потокобезопасным
-        {
-            public SportsCar() : base() { }  // : base() - а его конструктор также выведет полезную инфу о текущем для объекта контексте
-        }
-        [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]  // [System.AttributeUsage] - ты же помнишь этот
-                                                                                            //   атрубут для атрибутов, верно?
-        class MySynchronizationAttribute : SynchronizationAttribute
-        {
-        }
+    //[MySynchronization]                     // [..] - этим атрибутом мы сделаем наш класс контекстно-связанным, и его экземпляры попадут
+    //                                        //   в контекст для объектов, требующих безопасности при работе с потоками (этот контекст
+    //                                        //   будет создан при первом появлении экземпляра SportCarTS). Т.к. класс SportsCar будет
+    //                                        //   унаследован от SportCarTS, а атрибут [Synchonization] действует и на дочерние классы, я
+    //                                        //   сделал свой собственный атрибут-пустышку, наследующий ..SynchronizationAttribute, но не
+    //                                        //   действующий на классы, что находятся ниже в древе наследования
+    //                                        // Просто создать конструктор в SportsCar, а
+    //                                        //   затем унаследовать его в тип ниже было нельзя, т.к. тип ниже не может наследовать два
+    //                                        //   нужных ему класса
+    //class SportsCarTS : ContextBoundObject  // SportsCarTS - наш потокобезопасный класс (TS - Thead Safe)
+    //{                                       // : ContextBoundObject - благодаря унаследованию этого типа CLR не будет двигать объект в
+    //                                        //   другие контексты, и объект останется в благоприятном для себя контексте
+    //    public SportsCarTS()
+    //    {
+    //        Context currContext = System.Threading.Thread.CurrentContext;                               // ctor() - для наглядности мы
+    //        Console.WriteLine("{0} object is in context {1}", this.ToString(), currContext.ContextID);  //   здесь выведем свойства
+    //        Console.WriteLine("Here are all properties of this context");                               //   контекста, в котором будет
+    //        foreach (IContextProperty curr in currContext.ContextProperties)                            //   находиться новый объект
+    //        {                                            // ..CurrentContext - это статическое свойство // ..Context - объекты этого класса
+    //            Console.WriteLine("-> {0}", curr.Name);  //   класса ..Thread выдаст тебе контекст, в   //   могут хранить инфо о неком
+    //        }                                            //   котором работает текущий поток            //   контектсе. Это крохотный класс
+    //        Console.WriteLine();                         // ..ContextProperties - этим {get;} свойством // ..ContextID - здесь будет
+    //    }                                                //   мы получим все свойства (требования)      //   выведено, что мы находится в
+    //}                                                    //   полученного контекста (автор называет их  //   контексте 1
+    //                                                     //   дескрипторами)                            // curr - мы получим массив
+    //                                                     // curr.Name - просто название свойства (метод //   крохотных типов (в них всего
+    //                                                     //   ToString() не переопределён и выводит     //   3 новых члена)
+    //                                                     //   просто полное имя типа объекта)           //
+    //class SportsCar : SportsCarTS        // SportsCar - этот класс не будет потокобезопасным
+    //{
+    //    public SportsCar() : base() { }  // : base() - а его конструктор также выведет полезную инфу о текущем для объекта контексте
+    //}
+    //[AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]  // [System.AttributeUsage] - ты же помнишь этот
+    //                                                                                    //   атрубут для атрибутов, верно?
+    //class MySynchronizationAttribute : SynchronizationAttribute  // ...SynchronizationAttribute --- имеется лишь в составе .NET Classic и
+    //{                                                            //   Xamarin-версиях
+    //}
 }  
