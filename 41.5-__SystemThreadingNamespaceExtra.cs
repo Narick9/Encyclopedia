@@ -208,15 +208,4 @@ class __SystemThreadingNamespaceExtra
 
         Console.WriteLine("<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<-<   SystemThreadingNamespaceExtra_Silent()");
     }
-    [System.Runtime.Remoting.Contexts.Synchronization]
-    public class Printer : System.ContextBoundObject  //****public - этот класс пригодится в пр.19
-    {                                                 // System. - этим я делаю акцент на принадлежность сущности
-        public void PrintNumbers()
-        {
-            for (int i = 0; i < 7; i++)
-            {
-                Console.Write("{0} ", i);
-            }
-        }
-    }
 }

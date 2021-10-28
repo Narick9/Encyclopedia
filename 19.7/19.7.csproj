@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9EF11AAB-ED22-4741-8477-474E78A1B39A}</ProjectGuid>
+    <ProjectGuid>{596D6217-542D-4F05-B38B-30E0DEF3198C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_19._6</RootNamespace>
-    <AssemblyName>19.6</AssemblyName>
+    <RootNamespace>_19._7</RootNamespace>
+    <AssemblyName>19.7</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,19 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CLRThreadPool_TPL.TPL</StartupObject>
+    <StartupObject>_.AsyncAwait</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeFile1.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="19.4">
-      <HintPath>..\19.4_IssuesOfConcurrency\bin\Debug\19.4.exe</HintPath>
-    </Reference>
-    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

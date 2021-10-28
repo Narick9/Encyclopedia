@@ -1,0 +1,7 @@
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\bin\Debug\19.7.exe.config
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\bin\Debug\19.7.exe
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\bin\Debug\19.7.pdb
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\obj\Debug\19.7.csprojAssemblyReference.cache
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\obj\Debug\19.7.csproj.CoreCompileInputs.cache
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\obj\Debug\19.7.exe
+D:\dev 10 feb 2020\c#_2020-12dec-6\chapter19\19.7\obj\Debug\19.7.pdb
