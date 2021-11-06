@@ -1159,8 +1159,11 @@ class _Git_ASPNETPreview
         //   Если говорить поподробнее, то HTTPS защитит твои пакеты от атак перехватичков между сервером и клиентом. Точнее, перехватить они
         //     такие пакеты всё ещё смогут, но вот получить инфу - нет
         //   
-        //   Помнишь флаг --no-https, у утилиты dotnet при создании по шаблону webapi (полная команда выглядит так:
-        //         dotnet new webapi --no-https    )? Как ты понял ещё тогда, по умолчанию dotnet создаёт проекты с HTTPS сертификатом
+        //   /////////after reading: Create your own web//////////////////////////////////////////////////
+        //   // Помнишь флаг --no-https, у утилиты dotnet при создании по шаблону webapi (полная команда
+        //   //     выглядит так:    dotnet new webapi --no-https    )? Как ты понял ещё тогда, по
+        //   //     умолчанию dotnet создаёт проекты с HTTPS сертификатом
+        //   /////////////////////////////////////////////////////////////////////////////////////////////
         //
 
 
@@ -1382,6 +1385,38 @@ class _Git_ASPNETPreview
         //
         //   ****нужно как-то сделать https сертификат для dotnet cli
         //       
+        // Что именно изменяет флаг --no-https? Чтож, вот сравнение их ./Properties/launchSettings.json'ов:
+        //
+        //       Проект по    dotnet new web                                                Проект по    dotnet new web --no-https             
+        //       {                                                                          {                                                  
+        //         "iisSettings": {                                                           "iisSettings": {                                 
+        //           "windowsAuthentication": false,                                            "windowsAuthentication": false,                
+        //           "anonymousAuthentication": true,                                           "anonymousAuthentication": true,               
+        //           "iisExpress": {                                                            "iisExpress": {                                
+        //             "applicationUrl": "http://localhost:7049",                                 "applicationUrl": "http://localhost:18277",  
+        //             "sslPort": 44391                                                           "sslPort": 0                                 
+        //           }                                                                          }                                              
+        //         },                                                                         },                                               
+        //         "profiles": {                                                              "profiles": {                                    
+        //           "IIS Express": {                                                           "IIS Express": {                               
+        //             "commandName": "IISExpress",                                               "commandName": "IISExpress",                 
+        //             "launchBrowser": true,                                                     "launchBrowser": true,                       
+        //             "environmentVariables": {                                                  "environmentVariables": {                    
+        //               "ASPNETCORE_ENVIRONMENT": "Development"                                    "ASPNETCORE_ENVIRONMENT": "Development"    
+        //             }                                                                          }                                            
+        //           },                                                                         },                                             
+        //           "dotnetTest2": {                                                           "dotnetTest": {                                
+        //             "commandName": "Project",                                                  "commandName": "Project",                    
+        //             "dotnetRunMessages": "true",                                               "dotnetRunMessages": "true",                 
+        //             "launchBrowser": true,                                                     "launchBrowser": true,                       
+        //             "applicationUrl": "https://localhost:5001;http://localhost:5000",          "applicationUrl": "http://localhost:5000",   
+        //             "environmentVariables": {                                                  "environmentVariables": {                    
+        //               "ASPNETCORE_ENVIRONMENT": "Development"                                    "ASPNETCORE_ENVIRONMENT": "Development"    
+        //             }                                                                          }                                            
+        //           }                                                                          }                                              
+        //         }                                                                          }                                                
+        //       }                                                                          }                                                  
+        //
 
 
         // Create your own webapp  //after https!

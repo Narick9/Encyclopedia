@@ -1,6 +1,6 @@
 /*
  * creation date  26 jun 2021
- * last change    26 jun 2021
+ * last change    06 nov 2021
  * author         artur
  */
 using System;
@@ -41,7 +41,7 @@ class _SystemCollectionsGenericDictionary
         Dictionary<string, uint> numberStationsB = new Dictionary<string, uint>  //
         {                                                                        // {{..}, ...} - но можно использовать и обычный синтаксис
             { "XPA2", 9317 },                                                    //   инициализаци коллекций. Вложенные {}-ки - это синтаксис
-            { "F06a",  18276 },                                                  //   синтаксис инициализации массивов (как говорит VS), и да,
+            { "F06a",  18276 },                                                  //   инициализации массивов (как говорит VS), и да,
             { "V07",  13893 },                                                   //   его можно применять и в других коллекциях. Я думаю, что
         };                                                                       //   так строится массив агрументов для передачи в метод Add()
         Console.WriteLine("B: F06a: {0}\n", numberStationsB["F06a"]);            //   (и в другие функции)

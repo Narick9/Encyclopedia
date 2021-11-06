@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  12 dec 2020
- * last change    02 sep 2021
+ * last change    05 nov 2021
  * author  artur
  */
 using System;
@@ -118,6 +118,7 @@ partial class ClassAndInterface_StructAndOOPAndSystemNullable
         //    //     членам типа и его вложенным типам
         //    //   internal - закрывает видение для типов или членов типа извне сборки. Можно считать, что это private, но на уровне сборки.
         //    //     Может комбинироваться с protected
+        //    //         ****protected internal - не то, что ты думаешь (в MSDN есть отдельная страница про это)
 
 
         // Комментарии к классу FirstProgram расскажут тебе больше о главном классе программы
