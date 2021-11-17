@@ -1,6 +1,6 @@
 /*
  * creation date  21 aug 2021
- * last change    24 oct 2021
+ * last change    17 nov 2021
  * author         artur
  */
 using System;
@@ -783,6 +783,8 @@ class _Git_ASPNETPreview
         //               git reset [<options>] [<tree-ish>]
         //               git reset [<options>] [--] [<./../*.*>...]
         //               git reset [<options>] [<commit>]
+        //           
+        //           (****последний commit у меня команда    git reset    не отменила.    git reset <commit>    тоже ничего не сделал)
         //           
         //       [options] здесь таковы:
         //               --hard  -

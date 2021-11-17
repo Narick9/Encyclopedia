@@ -1,6 +1,6 @@
 ﻿/*
  * creation date  12 dec 2020
- * last change    26 aug 2021
+ * last change    07 nov 2021
  * author         artur
  */
 using System;
@@ -376,10 +376,10 @@ class _CSharpANDNETReleases_ManagedAndUnmanagedCode
         {
             return null;
         }
-        string moreData = GetString() ?? "u lost it";                   // ?? - это называют операцией объединения с null. Как мы помним, его
+        string moreData = GetString() ?? "u lost it";                   // ?? - это называют операцией объединения с null. Его
         Console.WriteLine("Value of moreData is \"{0}\"\n", moreData);  //   суть в том, чтобы присвоить какое-то другое значение, если
                                                                         //   основное хранит null. Здесь, т.к. GetString() выдаст null, будет
-                                                                        //   присвоено "u lost it. На самом деле это служит для сокращения
+                                                                        //   присвоено "u lost it". На самом деле это служит для сокращения
                                                                         //   объёмов кода
 
 

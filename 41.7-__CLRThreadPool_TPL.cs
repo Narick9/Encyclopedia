@@ -1,6 +1,6 @@
 /*
  * creation date  27 oct 2021
- * last change    28 oct 2021
+ * last change    17 nov 2021
  * author         artur
  */
 using System;
@@ -42,6 +42,7 @@ class __CLRThreadPool_TPL
         //     Если запрос прошёл хорошо, возвращается true. Если
         //     что-то пошло не так - сразу выбрасывается исключение System.NotSupportedException
         //   Сами экземпляры делегата WaitCallback могут хранить любые функции и методы, что соответсвуют сигнатуру void (object)
+        //
 
 
         // Using
